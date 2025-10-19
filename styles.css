@@ -329,12 +329,7 @@ footer {
     text-align: center;
 }
 
-/* --- Header Logo Styling --- */
-.header-logo {
-    height: 50px; /* Adjust height as needed to fit your navigation bar */
-    width: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Align nicely with other potential nav elements */
-}
+
 
 /* Optional: Adjust navbar padding if logo height changed overall header height */
 .navbar {
@@ -423,12 +418,7 @@ footer {
     }
 }
 
-/* --- Header Logo Styling --- */
-.header-logo {
-    height: 50px; /* Adjust height as needed to fit your navigation bar */
-    width: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Align nicely with other potential nav elements */
-}
+
 
 /* Optional: Adjust navbar padding if logo height changed overall header height */
 .navbar {
@@ -557,12 +547,7 @@ footer {
     }
 }
 
-/* --- Header Logo Styling --- */
-.header-logo {
-    height: 50px; /* Adjust height as needed to fit your navigation bar */
-    width: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Align nicely with other potential nav elements */
-}
+
 
 /* Optional: Adjust navbar padding if logo height changed overall header height */
 .navbar {
