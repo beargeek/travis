@@ -1,0 +1,258 @@
+/* --- Color Variables for Easy Reference --- */
+:root {
+    --color-light-blue: #8DC8E8;
+    --color-light-gray: #C2C7CA;
+    --color-black: #000000;
+    --color-red: #CB333B; /* Primary CTA */
+    --color-dark-gray: #5b595b; /* Footer/Secondary text */
+    --color-white: #ffffff;
+}
+
+/* --- Global Styles & Typography --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--color-black);
+    margin-bottom: 0.5em;
+    line-height: 1.1;
+}
+
+/* --- Navigation Bar (Header) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--color-white);
+    border-bottom: 4px solid var(--color-light-gray);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 25px;
+}
+
+nav li a:not(.btn) {
+    color: var(--color-black);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+nav li a:not(.btn):hover {
+    color: var(--color-light-blue);
+    border-bottom: 2px solid var(--color-light-blue);
+}
+
+/* --- Buttons (Call to Action) --- */
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.btn-primary { /* DONATE button */
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: 2px solid var(--color-red);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-white);
+    color: var(--color-red);
+}
+
+.btn-secondary { /* Volunteer button */
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-black);
+}
+
+.btn-main { /* View Platform button */
+    background-color: var(--color-light-blue);
+    color: var(--color-black);
+    margin-right: 15px;
+}
+
+.btn-main:hover {
+    background-color: var(--color-light-gray);
+}
+
+/* --- Hero Section (Banner) --- */
+.hero {
+    background-color: var(--color-light-blue);
+    background-image: url('placeholder_image.jpg'); /* Replace with a candidate image */
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-black);
+    padding: 0 5%;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slight overlay for readability */
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* --- Content Sections --- */
+.content-section {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--color-light-gray);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* --- Issue Grid --- */
+.issue-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.issue-card {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--color-light-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* --- Candidate Bio Section --- */
+.bio-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    background-color: var(--color-light-blue);
+    padding: 60px 5%;
+}
+
+.bio-text {
+    flex: 2;
+}
+
+.bio-image {
+    flex: 1;
+    min-height: 250px;
+    background-color: var(--color-dark-gray); /* Placeholder color for image */
+    border-radius: 10px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.social-links a {
+    color: var(--color-light-blue);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .issue-grid {
+        flex-direction: column;
+    }
+
+    .bio-section {
+        flex-direction: column-reverse; /* Put text above image on small screens */
+    }
+    
+    .bio-image {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    nav li {
+        margin: 5px 10px 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .cta-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-main {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
