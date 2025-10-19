@@ -273,12 +273,12 @@ footer {
 
 /* --- Header Logo Styling --- */
 .header-logo {
-    height: 150px; /* Adjust height as needed to fit your navigation bar */
+    height: 100px; /* Adjust height as needed to fit your navigation bar */
     width: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Align nicely with other potential nav elements */
 }
 
 /* Optional: Adjust navbar padding if logo height changed overall header height */
 .navbar {
-    padding: 10px 5%; /* Example: slightly less vertical padding if logo is tall */
+    padding: 5px 2%; /* Example: slightly less vertical padding if logo is tall */
 }
