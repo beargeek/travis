@@ -1,0 +1,45 @@
+/* --- Volunteer Page Specific Styles --- */
+
+/* Ensures content is centered and contained */
+.volunteer-main {
+    max-width: 800px; /* Slightly wider to accommodate the form embed */
+    margin: 20px auto;
+    padding: 0 5%;
+}
+
+/* Header for the Volunteer Page */
+.page-header {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--color-red); /* #CB333B for urgency */
+}
+
+.page-header p {
+    font-size: 1.1em;
+    color: var(--color-dark-gray); /* #5b595b */
+    max-width: 700px;
+    margin: 15px auto 0;
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: var(--color-light-gray); /* #C2C7CA - subtle background for the form block */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Embedded Google Form */
+.google-form-embed {
+    width: 100%;
+    /* Google Forms usually handle their own responsiveness inside the iframe, 
+       but setting the width to 100% ensures it fills the container. */
+}
+
+.disclaimer {
+    font-size: 0.85em;
+    color: var(--color-dark-gray);
+    margin-top: 20px;
+    text-align: center;
+}
