@@ -179,7 +179,13 @@ nav li a:not(.btn):hover {
     display: block; /* Ensure the link takes full card size */
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
+.issue-card-link,
+.issue-card-link:hover,
+.issue-card-link:focus,
+.issue-card-link:active {
+    text-decoration: none; /* Explicitly remove the underline in all states */
+    color: var(--color-black); /* Force the text color to black in all states */
+}
 /* --- Candidate Bio Section --- */
 .bio-section {
     display: flex;
