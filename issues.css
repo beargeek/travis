@@ -1,0 +1,81 @@
+/* --- Issues Page Specific Styles --- */
+
+/* Ensures content is centered and contained */
+.issues-main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 5%;
+}
+
+/* Header for the Issues Page */
+.page-header {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--color-light-blue); /* #8DC8E8 */
+}
+
+.page-header p {
+    font-size: 1.1em;
+    color: var(--color-dark-gray); /* #5b595b */
+    max-width: 700px;
+    margin: 15px auto 0;
+}
+
+/* Individual Issue Cards */
+.issue-detail-card {
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the alternating issue card headers */
+.primary-issue .card-header {
+    background-color: var(--color-dark-gray); /* #5b595b - Darker background for contrast */
+    color: var(--color-white);
+    padding: 15px 25px;
+}
+
+.secondary-issue .card-header {
+    background-color: var(--color-light-blue); /* #8DC8E8 - Lighter background */
+    color: var(--color-black);
+    padding: 15px 25px;
+}
+
+.issue-detail-card h2 {
+    margin: 0;
+    color: inherit; /* Inherits color from the card-header */
+    font-size: 1.8em;
+}
+
+.card-content {
+    padding: 25px;
+    background-color: var(--color-white);
+}
+
+.card-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.card-content ul li {
+    background: var(--color-light-gray); /* #C2C7CA - Subtle bullet background */
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-left: 5px solid var(--color-red); /* #CB333B - Bold accent line */
+    border-radius: 4px;
+}
+
+/* Spacing for buttons */
+.card-content .btn {
+    margin-top: 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .issue-detail-card h2 {
+        font-size: 1.5em;
+    }
+}
