@@ -43,3 +43,15 @@
     margin-top: 20px;
     text-align: center;
 }
+
+/* --- Header Logo Styling --- */
+.header-logo {
+    height: 50px; /* Adjust height as needed to fit your navigation bar */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align nicely with other potential nav elements */
+}
+
+/* Optional: Adjust navbar padding if logo height changed overall header height */
+.navbar {
+    padding: 10px 5%; /* Example: slightly less vertical padding if logo is tall */
+}
