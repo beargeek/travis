@@ -172,6 +172,14 @@ nav li a:not(.btn):hover {
     text-align: left;
 }
 
+.issue-card-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from body */
+    flex: 1; /* Maintain flexible sizing */
+    display: block; /* Ensure the link takes full card size */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 /* --- Candidate Bio Section --- */
 .bio-section {
     display: flex;
